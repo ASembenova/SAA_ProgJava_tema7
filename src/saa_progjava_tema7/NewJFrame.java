@@ -6,6 +6,7 @@
 package saa_progjava_tema7;
 
 import java.awt.ComponentOrientation;
+import java.awt.Toolkit;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -60,6 +61,8 @@ public class NewJFrame extends javax.swing.JFrame {
         jFileChooser1.setFileFilter(new FileNameExtensionFilter("TXT files", "txt"));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("7. Работа с файлами. Вар. № 9");
+        setIconImage(Toolkit.getDefaultToolkit().createImage(getClass().getResource("icon.png")));
         setResizable(false);
         getContentPane().setLayout(null);
 
